@@ -6,6 +6,9 @@ const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const DIST = path.join(ROOT, 'dist');
 const DATA = path.join(DIST, 'data');
 fs.mkdirSync(DATA, { recursive: true });
+// 闈欐€佽祫婧愶紙鍥炬爣 / manifest / sw锛夐殢鏋勫缓涓€璧疯繘 dist
+const PUB = path.join(ROOT, 'public');
+if (fs.existsSync(PUB)) fs.cpSync(PUB, DIST, { recursive: true });
 
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36';
 const strip = s => String(s ?? '').replace(/\s+/g, ' ').trim();
@@ -238,6 +241,11 @@ function render({ date, buckets, counts, generatedAt }) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#101217">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="姣忔棩鐑偣">
 <title>每日热点 · ${esc(date)}</title>
 <style>${STYLE}</style></head>
 <body>
@@ -253,6 +261,7 @@ ${sections}
   <div style="margin-top:6px"><a href="archive.html">历史归档</a> · <a href="${counts.repo || 'https://github.com/YXZ-KK/daily-digest'}" target="_blank" rel="noopener">源码</a></div>
   <div style="margin-top:6px">自动抓取公开榜单，仅作汇总，标题点击跳转原文</div>
 </footer>
+<script>if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}))}</script>
 </body></html>`;
 }
 
