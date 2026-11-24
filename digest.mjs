@@ -173,6 +173,7 @@ const STYLE = `
   .src{color:#7aa2ff}
   .heat{color:#ffb86b}
   .desc{flex-basis:100%;color:#98a1b5;min-width:0;overflow-wrap:anywhere}
+  footer a{color:#7aa2ff;text-decoration:none}
   footer{max-width:820px;margin:22px auto 0;color:#6c7488;font-size:12px;text-align:center}
   .brief-list{list-style:none;margin:0;padding:0}
   .brief-list li{margin:0 0 9px;font-size:14px;line-height:1.45;color:#c9d2e4}
@@ -247,7 +248,11 @@ function render({ date, buckets, counts, generatedAt }) {
 <nav>${nav}</nav>
 ${brief}
 ${sections}
-<footer>自动抓取公开榜单，仅作汇总，标题点击跳转原文。</footer>
+<footer>
+  <div>共 ${counts.total} 条 · 每天 08:00 自动更新</div>
+  <div style="margin-top:6px"><a href="archive.html">历史归档</a> · <a href="${counts.repo || 'https://github.com/YXZ-KK/daily-digest'}" target="_blank" rel="noopener">源码</a></div>
+  <div style="margin-top:6px">自动抓取公开榜单，仅作汇总，标题点击跳转原文</div>
+</footer>
 </body></html>`;
 }
 
@@ -285,7 +290,7 @@ fs.writeFileSync(path.join(DIST, 'archive.html'), `<!doctype html><html lang="zh
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>归档</title><style>
 body{background:#101217;color:#e6e8ee;font:16px/1.6 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;padding:20px;max-width:820px;margin:0 auto}
 a{color:#7aa2ff;display:block;padding:10px 0;border-bottom:1px solid #232a38;text-decoration:none}</style></head>
-<body><h2>历史归档</h2>${files.map(f => `<a href="data/${f}">${f.replace('.json', '')}</a>`).join('')}
-<p style="color:#6c7488;font-size:12px;margin-top:18px">每天一份 JSON，页面由本地脚本生成。</p></body></html>`);
+<body><a href="index.html" style="color:#7aa2ff;text-decoration:none;font-size:14px">← 回到今天</a><h2 style="margin-top:10px">历史归档</h2>${files.map(f => `<a href="data/${f}">${f.replace('.json', '')}</a>`).join('')}
+<p style="color:#6c7488;font-size:12px;margin-top:18px">每天 08:00 自动更新，历史 JSON 全部保留。</p></body></html>`);
 
 console.log(`done ${clean.length} items / ${Object.keys(buckets).length} cats -> ${DIST}`);
