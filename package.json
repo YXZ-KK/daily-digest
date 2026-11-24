@@ -1,0 +1,10 @@
+{
+  "name": "daily-digest",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "每日热点：抓取公开榜单，生成静态页，GitHub Pages 发布",
+  "scripts": {
+    "build": "node digest.mjs"
+  }
+}
