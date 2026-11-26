@@ -211,6 +211,8 @@ const STYLE = `
   li{margin:0 0 12px}
   li a{color:#e9edf7;text-decoration:none;overflow-wrap:anywhere}
   .meta{display:flex;flex-wrap:wrap;gap:6px 10px;margin-top:4px;font-size:12px;color:#8b93a7;align-items:baseline;min-width:0}
+  .tr{display:inline-block;font-size:11px;line-height:15px;padding:0 5px;margin-right:6px;border-radius:4px;
+      background:#1d2a3d;color:#8fb6d9;vertical-align:1px}
   .src{color:#7aa2ff}
   .heat{color:#ffb86b}
   .desc{flex-basis:100%;color:#98a1b5;min-width:0;overflow-wrap:anywhere}
@@ -269,7 +271,7 @@ function render({ date, buckets, counts, generatedAt, dates = [], archived = fal
           <div class="meta">
             <span class="src">${esc(it.source)}</span>
             ${it.heat ? `<span class="heat">${esc(it.heat)}</span>` : ''}
-            ${it.desc ? `<span class="desc">${esc(it.desc)}</span>` : ''}
+            ${(it.zh || it.desc) ? `<span class="desc">${it.zh ? `<span class="tr">译</span>${esc(it.zh)}` : esc(it.desc)}</span>` : ''}
           </div>
         </li>`).join('')}</ol>
     </section>`).join('');
@@ -341,6 +343,44 @@ ${dates.map(d => `<a href="d/${d}.html">${d}</a>`).join('')}
 <p style="color:#6c7488;font-size:12px;margin-top:18px">每天 08:00 自动更新，历史全部保留。</p></body></html>`;
 }
 
+// ---------- 英文条目翻译（MyMemory，逐条缓存） ----------
+const TR_CACHE = path.join(DATA, 'translate-cache.json');
+
+const cjkCount = s => (String(s).match(/[\u4e00-\u9fff]/g) || []).length;
+const latinCount = s => (String(s).match(/[A-Za-z]/g) || []).length;
+const needsZh = s => cjkCount(s) < 3 && latinCount(s) >= 10;
+
+async function translateOne(text) {
+  const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text.slice(0, 300))}&langpair=en|zh-CN`;
+  const r = await fetch(url, { headers: { 'user-agent': UA, accept: 'application/json' } });
+  if (!r.ok) throw new Error(`HTTP ${r.status}`);
+  const j = await r.json();
+  if (j?.responseStatus !== 200) throw new Error(j?.responseDetails || 'bad response');
+  const t = strip(j?.responseData?.translatedText || '');
+  if (!t || /MYMEMORY WARNING|QUERY LENGTH LIMIT/i.test(t)) throw new Error('empty translation');
+  return t;
+}
+
+async function attachTranslations(items) {
+  let cache = {};
+  try { cache = JSON.parse(fs.readFileSync(TR_CACHE, 'utf8')); } catch { cache = {}; }
+  let added = 0, failed = 0;
+  const todo = items.filter(it => needsZh(it.title) && !cache[it.title]).slice(0, 40);
+  for (const it of todo) {
+    try {
+      cache[it.title] = await translateOne(it.title);
+      added++;
+    } catch {
+      failed++;
+    }
+    await new Promise(s => setTimeout(s, 120));
+  }
+  for (const it of items) if (cache[it.title]) it.zh = cache[it.title];
+  fs.writeFileSync(TR_CACHE, JSON.stringify(cache, null, 2));
+  if (added || failed) console.log(`translated ${added} (failed ${failed})`);
+  return items;
+}
+
 // ---------- main ----------
 const today = new Intl.DateTimeFormat('sv-SE', { timeZone: 'Asia/Shanghai' }).format(new Date());
 const hhmm = new Intl.DateTimeFormat('zh-CN', { timeZone: 'Asia/Shanghai', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date());
@@ -368,6 +408,7 @@ results.forEach((r, i) => {
 });
 
 const clean = dedupe(items).map(it => ({ ...it, title: it.title.slice(0, 90) }));
+await attachTranslations(clean);
 const buckets = categorize(clean);
 const counts = { total: clean.length, sources };
 
