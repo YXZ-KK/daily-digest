@@ -1,12 +1,14 @@
 import fs from 'node:fs';
-import { fileURLToPath } from 'node:url';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const DIST = path.join(ROOT, 'dist');
 const DATA = path.join(DIST, 'data');
+const DAYS = path.join(DIST, 'd');
 fs.mkdirSync(DATA, { recursive: true });
-// 闈欐€佽祫婧愶紙鍥炬爣 / manifest / sw锛夐殢鏋勫缓涓€璧疯繘 dist
+fs.mkdirSync(DAYS, { recursive: true });
+// 静态资源（图标 / manifest / sw）随构建一起进 dist
 const PUB = path.join(ROOT, 'public');
 if (fs.existsSync(PUB)) fs.cpSync(PUB, DIST, { recursive: true });
 
@@ -19,6 +21,14 @@ async function getJson(url, extra = {}) {
   });
   if (!r.ok) throw new Error(`HTTP ${r.status}`);
   return r.json();
+}
+
+async function getText(url) {
+  const r = await fetch(url, {
+    headers: { 'user-agent': UA, accept: 'application/rss+xml,application/xml,text/xml,*/*', 'accept-language': 'zh-CN,zh;q=0.9' },
+  });
+  if (!r.ok) throw new Error(`HTTP ${r.status}`);
+  return r.text();
 }
 
 // ---------- sources ----------
@@ -110,6 +120,31 @@ async function ghTrending() {
   return out;
 }
 
+// 通用 RSS 源
+function rss(name, url, limit = 20) {
+  return async () => {
+    const xml = await getText(url);
+    const items = xml.split(/<item[\s>]/).slice(1);
+    const pick = (chunk, tag) => {
+      const m = chunk.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`));
+      if (!m) return null;
+      // RSS 里常把正文 HTML 转义着塞进 description，先解实体再剥标签
+      let s = m[1].replace(/<!\[CDATA\[|\]\]>/g, '')
+        .replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"')
+        .replace(/&#39;/g, "'").replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&');
+      s = s.replace(/<[^>]+>/g, ' ');
+      return strip(s);
+    };
+    return items.slice(0, limit).map((chunk, i) => ({
+      source: name, rank: i + 1,
+      title: pick(chunk, 'title') || '',
+      desc: (pick(chunk, 'description') || '').slice(0, 120),
+      heat: null,
+      url: pick(chunk, 'link') || '',
+    })).filter(x => x.title && x.url);
+  };
+}
+
 // ---------- categorize ----------
 const KEYWORDS = {
   '科技/AI': ['AI', '人工智能', '大模型', '模型', '芯片', '半导体', '算力', '显卡', 'GPU', 'CPU', '手机', '华为', '苹果', 'iPhone', 'iOS', '安卓', '鸿蒙', '系统', '软件', '编程', '开源', '算法', '机器人', '卫星', '航天', '火箭', '量子', '电池', '新能源', '自动驾驶', '互联网', '服务器', '黑客', '漏洞', '数据中心', '英伟达', '高通', '台积电', 'OpenAI', 'GPT', 'ChatGPT', 'DeepSeek', 'Gemini', 'Claude', 'Meta', 'Google', '微软', '亚马逊', 'SpaceX', '马斯克', '特斯拉', '发布会', '新品', '笔记本', '电脑', 'App', '插件'],
@@ -121,7 +156,10 @@ const KEYWORDS = {
   '国际': ['美国', '特朗普', '拜登', '俄罗斯', '乌克兰', '以色列', '巴勒斯坦', '伊朗', '日本', '韩国', '朝鲜', '欧盟', '联合国', '外交', '制裁', '战争', '停火', '总统', '首相', '大选', '移民'],
 };
 
-const SOURCE_DEFAULT = { 'B站': '游戏/动漫', 'HN': '科技/AI', 'GitHub': '科技/AI', '微博': '社会/民生', '知乎': '社会/民生', '百度': '社会/民生' };
+const SOURCE_DEFAULT = {
+  'B站': '游戏/动漫', 'HN': '科技/AI', 'GitHub': '科技/AI', 'IT之家': '科技/AI', '少数派': '科技/AI', '钛媒体': '财经/商业',
+  '微博': '社会/民生', '知乎': '社会/民生', '百度': '社会/民生',
+};
 
 function categorize(items) {
   const names = Object.keys(KEYWORDS);
@@ -179,8 +217,13 @@ const STYLE = `
   footer a{color:#7aa2ff;text-decoration:none}
   footer{max-width:820px;margin:22px auto 0;color:#6c7488;font-size:12px;text-align:center}
   .brief-list{list-style:none;margin:0;padding:0}
-  .brief-list li{margin:0 0 9px;font-size:14px;line-height:1.45;color:#c9d2e4}
-  .brief-list b{display:block;color:#7aa2ff;font-weight:500;font-size:12px;margin-bottom:2px}
+  .brief-list li{margin:0 0 14px;font-size:14px;line-height:1.5;color:#c9d2e4}
+  .brief-list li:last-child{margin-bottom:0}
+  .brief-list b{display:block;color:#7aa2ff;font-weight:600;font-size:12px;margin-bottom:3px;letter-spacing:.02em}
+  .brief-list .dot{color:#4a5368;margin:0 6px}
+  .picker{max-width:820px;margin:16px auto 0;text-align:center}
+  .picker select{background:#1b1f2a;color:#e6e8ee;border:1px solid #2b3242;border-radius:10px;
+                 padding:9px 12px;font-size:14px;min-width:190px}
   @media (prefers-color-scheme:light){
     body{background:#f6f7fb;color:#1c2030}
     nav{background:linear-gradient(#f6f7fb 70%,transparent)}
@@ -188,6 +231,8 @@ const STYLE = `
     nav a{background:#fff;border-color:#e2e6f0;color:#4a5468}
     li a{color:#1b2b52}
     .desc{color:#5a6478}
+    .brief-list li{color:#3a4358}
+    .picker select{background:#fff;color:#1c2030;border-color:#dfe4ef}
   }`;
 
 // 各类目内按来源轮转，避免某一站刷屏
@@ -209,10 +254,12 @@ function roundRobin(list) {
   return out;
 }
 
-function render({ date, buckets, counts, generatedAt }) {
-  const order = ['科技/AI', '游戏/动漫', '财经/商业', '娱乐/明星', '社会/民生', '体育', '国际', '其他'];
-  const cats = order.filter(c => buckets[c]?.length);
+const CAT_ORDER = ['科技/AI', '游戏/动漫', '财经/商业', '娱乐/明星', '社会/民生', '体育', '国际', '其他'];
+
+function render({ date, buckets, counts, generatedAt, dates = [], archived = false }) {
+  const cats = CAT_ORDER.filter(c => buckets[c]?.length);
   for (const c of cats) buckets[c] = roundRobin(buckets[c]);
+
   const sections = cats.map(c => `
     <section class="card" id="${esc(c)}">
       <h2>${esc(c)} <span class="n">${buckets[c].length}</span></h2>
@@ -226,53 +273,86 @@ function render({ date, buckets, counts, generatedAt }) {
           </div>
         </li>`).join('')}</ol>
     </section>`).join('');
+
   const nav = cats.map(c => `<a href="#${esc(c)}">${esc(c)}</a>`).join('');
+
+  // 速览：每类前 3 条，标题完整不截断
   const brief = `<section class="card" id="top">
-      <h2>速览</h2>
+      <h2>速览 <span class="n">每类前 3 条</span></h2>
       <ul class="brief-list">${cats.map(c => {
-        const top = [...buckets[c]].sort((a, b) => (a.rank || 99) - (b.rank || 99)).slice(0, 2)
-          .map(it => esc(it.title.slice(0, 30))).join('；');
+        const top = [...buckets[c]].sort((a, b) => (a.rank || 99) - (b.rank || 99)).slice(0, 3)
+          .map(it => `<a href="${esc(it.url)}" target="_blank" rel="noopener noreferrer">${esc(it.title)}</a>`)
+          .join('<span class="dot">·</span>');
         return `<li><b>${esc(c)}</b>${top}</li>`;
       }).join('')}</ul>
     </section>`;
+
+  const base = archived ? '../' : '';
+  const picker = dates.length ? `<div class="picker">
+    <select id="dateSel" aria-label="选择日期">
+      ${dates.map(d => `<option value="${esc(d)}"${d === date ? ' selected' : ''}>${esc(d)}${d === dates[0] ? '（最新）' : ''}</option>`).join('')}
+    </select>
+  </div>
+  <script>document.getElementById('dateSel').addEventListener('change',e=>{
+    const v=e.target.value; if(!v) return;
+    location.href = ${archived ? `'../d/'+v+'.html'` : `'d/'+v+'.html'`};
+  })</script>` : '';
 
   return `<!doctype html>
 <html lang="zh-CN"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#101217">
-<link rel="manifest" href="manifest.webmanifest">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="${base}manifest.webmanifest">
+<link rel="apple-touch-icon" href="${base}apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="姣忔棩鐑偣">
+<meta name="apple-mobile-web-app-title" content="每日热点">
 <title>每日热点 · ${esc(date)}</title>
 <style>${STYLE}</style></head>
 <body>
 <header>
   <h1>每日热点 · ${esc(date)}</h1>
   <div class="sub">${counts.total} 条 · ${esc(generatedAt)} 生成 · ${esc(counts.sources.join(' / '))}</div>
+  ${archived ? '<div class="sub" style="margin-top:6px"><a href="../index.html" style="color:#7aa2ff;text-decoration:none">← 回到今天</a></div>' : ''}
 </header>
 <nav>${nav}</nav>
 ${brief}
 ${sections}
+${picker}
 <footer>
   <div>共 ${counts.total} 条 · 每天 08:00 自动更新</div>
-  <div style="margin-top:6px"><a href="archive.html">历史归档</a> · <a href="${counts.repo || 'https://github.com/YXZ-KK/daily-digest'}" target="_blank" rel="noopener">源码</a></div>
+  <div style="margin-top:6px"><a href="${base}archive.html">历史归档</a> · <a href="${counts.repo || 'https://github.com/YXZ-KK/daily-digest'}" target="_blank" rel="noopener">源码</a></div>
   <div style="margin-top:6px">自动抓取公开榜单，仅作汇总，标题点击跳转原文</div>
 </footer>
-<script>if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}))}</script>
+<script>if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('${base}sw.js').catch(()=>{}))}</script>
 </body></html>`;
 }
 
-// ---------- main ----------
-const now = new Date();
-const cnFmt = new Intl.DateTimeFormat('sv-SE', { timeZone: 'Asia/Shanghai', year: 'numeric', month: '2-digit', day: '2-digit' });
-const cnTime = new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Shanghai', hour: '2-digit', minute: '2-digit', hour12: false });
-const date = cnFmt.format(now);
-const generatedAt = `${date} ${cnTime.format(now)}`;
+function archivePage(dates) {
+  return `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>历史归档</title><style>
+body{background:#101217;color:#e6e8ee;font:16px/1.6 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;padding:20px;max-width:820px;margin:0 auto}
+a{color:#7aa2ff;display:block;padding:10px 0;border-bottom:1px solid #232a38;text-decoration:none}
+@media (prefers-color-scheme:light){body{background:#f6f7fb;color:#1c2030}a{color:#1b4fd8;border-color:#e6e9f2}}
+</style></head>
+<body><a href="index.html" style="font-size:14px">← 回到今天</a><h2 style="margin-top:10px">历史归档</h2>
+${dates.map(d => `<a href="d/${d}.html">${d}</a>`).join('')}
+<p style="color:#6c7488;font-size:12px;margin-top:18px">每天 08:00 自动更新，历史全部保留。</p></body></html>`;
+}
 
-const jobs = [['微博', weibo], ['知乎', zhihu], ['B站', bili], ['百度', baidu], ['HN', hackernews], ['GitHub', ghTrending]];
+// ---------- main ----------
+const today = new Intl.DateTimeFormat('sv-SE', { timeZone: 'Asia/Shanghai' }).format(new Date());
+const hhmm = new Intl.DateTimeFormat('zh-CN', { timeZone: 'Asia/Shanghai', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date());
+const generatedAt = `${today} ${hhmm}`;
+
+const jobs = [
+  ['微博', weibo], ['知乎', zhihu], ['B站', bili], ['百度', baidu], ['HN', hackernews],
+  ['IT之家', rss('IT之家', 'https://www.ithome.com/rss/', 20)],
+  ['少数派', rss('少数派', 'https://sspai.com/feed', 15)],
+  ['钛媒体', rss('钛媒体', 'https://www.tmtpost.com/rss', 15)],
+  ['GitHub', ghTrending],
+];
 const results = await Promise.allSettled(jobs.map(([, fn]) => fn()));
 
 const items = [], sources = [];
@@ -288,18 +368,39 @@ results.forEach((r, i) => {
 });
 
 const clean = dedupe(items).map(it => ({ ...it, title: it.title.slice(0, 90) }));
-clean.sort((a, b) => (a.rank || 99) - (b.rank || 99));
 const buckets = categorize(clean);
+const counts = { total: clean.length, sources };
 
-fs.writeFileSync(path.join(DATA, `${date}.json`), JSON.stringify({ date, generatedAt, sources, total: clean.length, categories: Object.fromEntries(Object.entries(buckets).map(([k, v]) => [k, v.length])), items: clean }, null, 2));
-fs.writeFileSync(path.join(DIST, 'index.html'), render({ date, buckets, counts: { total: clean.length, sources }, generatedAt }));
+fs.writeFileSync(path.join(DATA, `${today}.json`), JSON.stringify({
+  date: today, generatedAt, sources, total: clean.length,
+  categories: Object.fromEntries(Object.entries(buckets).map(([k, v]) => [k, v.length])),
+  items: clean,
+}, null, 2));
 
-const files = fs.readdirSync(DATA).filter(f => f.endsWith('.json')).sort().reverse();
-fs.writeFileSync(path.join(DIST, 'archive.html'), `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1"><title>归档</title><style>
-body{background:#101217;color:#e6e8ee;font:16px/1.6 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;padding:20px;max-width:820px;margin:0 auto}
-a{color:#7aa2ff;display:block;padding:10px 0;border-bottom:1px solid #232a38;text-decoration:none}</style></head>
-<body><a href="index.html" style="color:#7aa2ff;text-decoration:none;font-size:14px">← 回到今天</a><h2 style="margin-top:10px">历史归档</h2>${files.map(f => `<a href="data/${f}">${f.replace('.json', '')}</a>`).join('')}
-<p style="color:#6c7488;font-size:12px;margin-top:18px">每天 08:00 自动更新，历史 JSON 全部保留。</p></body></html>`);
+const dates = fs.readdirSync(DATA).filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f))
+  .map(f => f.replace('.json', '')).sort().reverse();
 
-console.log(`done ${clean.length} items / ${Object.keys(buckets).length} cats -> ${DIST}`);
+// 今天
+fs.writeFileSync(path.join(DIST, 'index.html'),
+  render({ date: today, buckets, counts, generatedAt, dates }));
+
+// 历史每天一页（含今天，供统一的日期下拉跳转）
+for (const d of dates) {
+  const file = path.join(DATA, `${d}.json`);
+  let payload;
+  try { payload = JSON.parse(fs.readFileSync(file, 'utf8')); } catch { continue; }
+  const items2 = payload.items || [];
+  const b2 = categorize(items2);
+  fs.writeFileSync(path.join(DAYS, `${d}.html`), render({
+    date: d,
+    buckets: b2,
+    counts: { total: items2.length, sources: payload.sources || [] },
+    generatedAt: payload.generatedAt || d,
+    dates,
+    archived: d !== today,
+  }));
+}
+
+fs.writeFileSync(path.join(DIST, 'archive.html'), archivePage(dates));
+
+console.log(`done ${clean.length} items / ${Object.keys(buckets).length} cats / ${dates.length} days -> ${DIST}`);
