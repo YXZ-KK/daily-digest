@@ -1,0 +1,1198 @@
+{
+  "date": "2026-11-26",
+  "generatedAt": "2026-11-26 23:48",
+  "sources": [
+    "微博",
+    "知乎",
+    "B站",
+    "百度",
+    "HN"
+  ],
+  "total": 155,
+  "categories": {
+    "社会/民生": 75,
+    "游戏/动漫": 27,
+    "科技/AI": 37,
+    "财经/商业": 5,
+    "国际": 5,
+    "体育": 3,
+    "娱乐/明星": 3
+  },
+  "items": [
+    {
+      "source": "微博",
+      "rank": 1,
+      "title": "三只松鼠致歉声明",
+      "heat": 1165583,
+      "url": "https://s.weibo.com/weibo?q=%E4%B8%89%E5%8F%AA%E6%9D%BE%E9%BC%A0%E8%87%B4%E6%AD%89%E5%A3%B0%E6%98%8E"
+    },
+    {
+      "source": "知乎",
+      "rank": 1,
+      "title": "两地通报女教授介入已婚副校长家庭事件，安大副校长付某、武大曾某某被免职，有哪些值得关注的信息？",
+      "desc": "武大通报PDF举报女教授事件 安大副校长付某被举报事件调查结果 安徽省教育厅官微发布情况通报：针对武汉大学移送的关于安徽大学付某涉嫌违规使用科研经费问题线索，安徽省委高度重视，要求省纪委及时进行核查。经查，付某在武汉大学",
+      "heat": null,
+      "url": "https://www.zhihu.com/question/2109373596413818400"
+    },
+    {
+      "source": "B站",
+      "rank": 1,
+      "title": "《蓝色星原：旅谣》公测版本PV | 星跃始动",
+      "desc": "送送送！ 美美美！ 抓抓抓！ 玩玩玩！ 《蓝色星原：旅谣》11月26日正式公测！ ✦《蓝色星原：旅谣》下载地址：https://www.biligame.com/detail/?id=111392&s",
+      "heat": "361.8万播放",
+      "url": "https://www.bilibili.com/video/BV1UByzzRE4K"
+    },
+    {
+      "source": "百度",
+      "rank": 1,
+      "title": "政府机关、事业单位带头过紧日子",
+      "desc": "",
+      "heat": null,
+      "url": "https://m.baidu.com/s?word=%E6%94%BF%E5%BA%9C%E6%9C%BA%E5%85%B3%E3%80%81%E4%BA%8B%E4%B8%9A%E5%8D%95%E4%BD%8D%E5%B8%A6%E5%A4%B4%E8%BF%87%E7%B4%A7%E6%97%A5%E5%AD%90&sa=fyb_news"
+    },
+    {
+      "source": "HN",
+      "rank": 1,
+      "title": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening",
+      "heat": "1790 分",
+      "url": "https://scottaaronson.blog/?p=10379"
+    },
+    {
+      "source": "微博",
+      "rank": 2,
+      "title": "中国男篮不敌沙特男篮",
+      "heat": 842711,
+      "url": "https://s.weibo.com/weibo?q=%E4%B8%AD%E5%9B%BD%E7%94%B7%E7%AF%AE%E4%B8%8D%E6%95%8C%E6%B2%99%E7%89%B9%E7%94%B7%E7%AF%AE"
+    },
+    {
+      "source": "知乎",
+      "rank": 2,
+      "title": "如何看待黎曼猜想证明已被压缩 99.5% 到 7.6 万行？",
+      "desc": "刚刚，黎曼猜想证明代码暴砍了99.5%！只剩7.6万行",
+      "heat": null,
+      "url": "https://www.zhihu.com/question/2109221701389239300"
+    },
+    {
+      "source": "B站",
+      "rank": 2,
+      "title": "长得帅就要被网爆么?",
+      "desc": "虽然我还没有因为长得帅就被网暴，但我觉得离那天不远了",
+      "heat": "84.0万播放",
+      "url": "https://www.bilibili.com/video/BV11AyUz6E6h"
+    },
+    {
+      "source": "百度",
+      "rank": 2,
+      "title": "中国六座城市跻身世界一线",
+      "desc": "",
+      "heat": null,
+      "url": "https://m.baidu.com/s?word=%E4%B8%AD%E5%9B%BD%E5%85%AD%E5%BA%A7%E5%9F%8E%E5%B8%82%E8%B7%BB%E8%BA%AB%E4%B8%96%E7%95%8C%E4%B8%80%E7%BA%BF&sa=fyb_news"
+    },
+    {
+      "source": "HN",
+      "rank": 2,
+      "title": "1Password Security Incident",
+      "heat": "1562 分",
+      "url": "https://1password.com/blog/update-on-nov-2026-security-incident"
+    },
+    {
+      "source": "微博",
+      "rank": 3,
+      "title": "城市轨道交通的万里版图",
+      "heat": 689477,
+      "url": "https://s.weibo.com/weibo?q=%E5%9F%8E%E5%B8%82%E8%BD%A8%E9%81%93%E4%BA%A4%E9%80%9A%E7%9A%84%E4%B8%87%E9%87%8C%E7%89%88%E5%9B%BE"
+    },
+    {
+      "source": "知乎",
+      "rank": 3,
+      "title": "网友爆料小米YU7车型前视摄像头集中故障，行车录像无法录制，前向防碰撞失效，是批次质量问题吗？",
+      "desc": "[5 张图片]",
+      "heat": null,
+      "url": "https://www.zhihu.com/question/2109256447582266600"
+    },
+    {
+      "source": "B站",
+      "rank": 3,
+      "title": "《不小心捡了只猫咪》",
+      "desc": "喜欢请来个三连啊 谢谢啦！ 原曲：《烂奇迹》 - 杨羊烊",
+      "heat": "60.2万播放",
+      "url": "https://www.bilibili.com/video/BV1FPykz2EYe"
+    },
+    {
+      "source": "百度",
+      "rank": 3,
+      "title": "从世界经济版图看中国经济之韧",
+      "desc": "",
+      "heat": null,
+      "url": "https://m.baidu.com/s?word=%E4%BB%8E%E4%B8%96%E7%95%8C%E7%BB%8F%E6%B5%8E%E7%89%88%E5%9B%BE%E7%9C%8B%E4%B8%AD%E5%9B%BD%E7%BB%8F%E6%B5%8E%E4%B9%8B%E9%9F%A7&sa=fyb_news"
+    },
+    {
+      "source": "HN",
+      "rank": 3,
+      "title": "The New York Times warns photographers not to update Photoshop over AI features",
+      "heat": "512 分",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features"
+    },
+    {
+      "source": "微博",
+      "rank": 4,
+      "title": "星动剪刀手养成日记",
+      "heat": 677075,
+      "url": "https://s.weibo.com/weibo?q=%E6%98%9F%E5%8A%A8%E5%89%AA%E5%88%80%E6%89%8B%E5%85%BB%E6%88%90%E6%97%A5%E8%AE%B0"
+    },
+    {
+      "source": "知乎",
+      "rank": 4,
+      "title": "业主搜索发现有 WiFi 名诅咒自家 8 岁孩子，怀疑是楼下邻居所为，该如何合法维权？",
+      "desc": "去年4月，杨先生花700万在杭州买了一套房子。杨先生家住701室，有一个8岁的孩子，目前读二年级。当初选择这里，也是为了孩子能获得更好的教育资源。最近他搜到家附近的一个WiFi，名称为“701小孩替人挡灾”。杨先生怀疑是",
+      "heat": null,
+      "url": "https://www.zhihu.com/question/2108982413300865000"
+    },
+    {
+      "source": "B站",
+      "rank": 4,
+      "title": "【纪录片】人生一串 第四季 04 边城浪子",
+      "desc": "边城不是地图边缘的注脚，不是被遗忘的角落，而是风把沙子、雨林和江雪吹到一处，炭火在国境线里替人留灯的地方。它站在两种地貌、两种时区、两种生活的接缝上，守着来路，也望着去路。若羌的炉子挨着大漠，烤的是长",
+      "heat": "79.1万播放",
+      "url": "https://www.bilibili.com/video/BV1fFy6z6En1"
+    },
+    {
+      "source": "百度",
+      "rank": 4,
+      "title": "车卖疯了 钱去哪了",
+      "desc": "",
+      "heat": null,
+      "url": "https://m.baidu.com/s?word=%E8%BD%A6%E5%8D%96%E7%96%AF%E4%BA%86+%E9%92%B1%E5%8E%BB%E5%93%AA%E4%BA%86&sa=fyb_news"
+    },
+    {
+      "source": "HN",
+      "rank": 4,
+      "title": "Much shorter version of GRH Lean verification from Anthropic",
+      "heat": "502 分",
+      "url": "https://github.com/lsernau/grh-lean"
+    },
+    {
+      "source": "微博",
+      "rank": 5,
+      "title": "许飞口碑",
+      "heat": 594075,
+      "url": "https://s.weibo.com/weibo?q=%E8%AE%B8%E9%A3%9E%E5%8F%A3%E7%A2%91"
+    },
+    {
+      "source": "知乎",
+      "rank": 5,
+      "title": "魏建军直言很多车企靠国家补贴生存，拿到的补贴比车企盈利还多，该说法有依据吗？",
+      "desc": "11月26日，长城汽车董事长魏建军到访格力电器参观交流。魏建军表示，汽车产业很特殊，各地方都保护它，宁可让它一直转着，也不愿意让它倒掉。在他看来，汽车是国家投资补贴花钱最大的一个产业。“国家拿出来的那点钱，比我们很多汽车",
+      "heat": null,
+      "url": "https://www.zhihu.com/question/2109295438058870500"
+    },
+    {
+      "source": "B站",
+      "rank": 5,
+      "title": "“MJ宇宙之最正能量的一集”",
+      "desc": "烂活",
+      "heat": "79.8万播放",
+      "url": "https://www.bilibili.com/video/BV1euy6zeEDx"
+    },
+    {
+      "source": "百度",
+      "rank": 5,
+      "title": "中国男篮80比82不敌沙特",
+      "desc": "",
+      "heat": null,
+      "url": "https://m.baidu.com/s?word=%E4%B8%AD%E5%9B%BD%E7%94%B7%E7%AF%AE80%E6%AF%9482%E4%B8%8D%E6%95%8C%E6%B2%99%E7%89%B9&sa=fyb_news"
+    },
+    {
+      "source": "HN",
+      "rank": 5,
+      "title": "GPT-6.2 Astra is the first model to beat Googlers' code golf records",
+      "heat": "426 分",
+      "url": "https://bjin.github.io/go-codegolf-benchmark/#leaderboard"
+    },
+    {
+      "source": "微博",
+      "rank": 6,
+      "title": "中国男篮vs沙特男篮",
+      "heat": 446791,
+      "url": "https://s.weibo.com/weibo?q=%E4%B8%AD%E5%9B%BD%E7%94%B7%E7%AF%AEvs%E6%B2%99%E7%89%B9%E7%94%B7%E7%AF%AE"
+    },
+    {
+      "source": "知乎",
+      "rank": 6,
+      "title": "网红甲亢哥百米跑出 10.35 秒，前 15 米加速度比博尔特还快，这一成绩含金量如何？",
+      "desc": "近日，美国网红甲亢哥在100米挑战赛中跑出10秒35，这一成绩甚至震惊到了百米世界纪录保持者博尔特。 在甲亢哥的自媒体节目中，他进行了两次百米尝试，第一次跑出10秒50，第二次跑出10秒352。根据对比显示，甲亢哥在起跑",
+      "heat": null,
+      "url": "https://www.zhihu.com/question/2108516163269439700"
+    },
+    {
+      "source": "B站",
+      "rank": 6,
+      "title": "《我怎么又穿越了》",
+      "desc": "-",
+      "heat": "85.4万播放",
+      "url": "https://www.bilibili.com/video/BV1UxykzhEGE"
+    },
+    {
+      "source": "百度",
+      "rank": 6,
+      "title": "宝妈减重近100斤后撞脸王祖贤",
+      "desc": "",
+      "heat": null,
+      "url": "https://m.baidu.com/s?word=%E5%AE%9D%E5%A6%88%E5%87%8F%E9%87%8D%E8%BF%91100%E6%96%A4%E5%90%8E%E6%92%9E%E8%84%B8%E7%8E%8B%E7%A5%96%E8%B4%A4&sa=fyb_news"
+    },
+    {
+      "source": "HN",
+      "rank": 6,
+      "title": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
+      "heat": "393 分",
+      "url": "https://twitter.com/thsottiaux/status/2125784147889393806"
+    },
+    {
+      "source": "微博",
+      "rank": 7,
+      "title": "花花独狼吃鸡",
+      "heat": 397696,
+      "url": "https://s.weibo.com/weibo?q=%E8%8A%B1%E8%8A%B1%E7%8B%AC%E7%8B%BC%E5%90%83%E9%B8%A1"
+    },
+    {
+      "source": "知乎",
+      "rank": 7,
+      "title": "厦航年利润7亿人民币，现在却突然订了74亿美元波音飞机，相当70 年利润，这笔账风险落在谁身上？",
+      "desc": "厦航2025年7.79亿元，现在突然订购50架波音737-8，目录价74亿美元，相当于以后70年全部利润 1. 全部交付后年折旧额估算高达12亿-19亿人民币，直接是当前净利润的2倍多。这还没算贷款利息和运营成本。 2.",
+      "heat": null,
+      "url": "https://www.zhihu.com/question/2108699823377589200"
+    },
+    {
+      "source": "B站",
+      "rank": 7,
+      "title": "吓哭了！华山长空栈道是人爬的？和有山挑战天下第一奇险",
+      "desc": "罗文; 甄妮 - 世间始终你好 Aldin; MOCCA - Happy KRS-One - Never Give Up Michael Martin Murphey - Red River Vall",
+      "heat": "20.2万播放",
+      "url": "https://www.bilibili.com/video/BV1dj1EzVE4L"
+    },
+    {
+      "source": "百度",
+      "rank": 7,
+      "title": "董明珠：某些车企就是瞎搞 该灭就灭",
+      "desc": "",
+      "heat": null,
+      "url": "https://m.baidu.com/s?word=%E8%91%A3%E6%98%8E%E7%8F%A0%EF%BC%9A%E6%9F%90%E4%BA%9B%E8%BD%A6%E4%BC%81%E5%B0%B1%E6%98%AF%E7%9E%8E%E6%90%9E+%E8%AF%A5%E7%81%AD%E5%B0%B1%E7%81%AD&sa=fyb_news"
+    },
+    {
+      "source": "HN",
+      "rank": 7,
+      "title": "Slow Ubuntu security response times",
+      "heat": "363 分",
+      "url": "https://www.openwall.com/lists/oss-security/2026/11/25/9"
+    },
+    {
+      "source": "微博",
+      "rank": 8,
+      "title": "董明珠称汽车行业有老鼠",
+      "heat": 396431,
+      "url": "https://s.weibo.com/weibo?q=%E8%91%A3%E6%98%8E%E7%8F%A0%E7%A7%B0%E6%B1%BD%E8%BD%A6%E8%A1%8C%E4%B8%9A%E6%9C%89%E8%80%81%E9%BC%A0"
+    },
+    {
+      "source": "知乎",
+      "rank": 8,
+      "title": "如何评价《中华小当家》里小当家把朝天椒、蒜蓉和豆瓣酱加到通心粉里，并做成饺子，落败被盘古处决的剧情？",
+      "desc": "[图片]",
+      "heat": null,
+      "url": "https://www.zhihu.com/question/1930259032301611000"
+    },
+    {
+      "source": "B站",
+      "rank": 8,
+      "title": "《异环》Exe EP丨Blue light",
+      "desc": "超自然都市开放世界RPG《异环》全新版本「致电，空想迷数」现已开启！立刻下载>>>https://www.biligame.com/detail/?id=111795 清清楚楚 冷冷冰冰 零差错 城市",
+      "heat": "35.0万播放",
+      "url": "https://www.bilibili.com/video/BV1AYsq6kE5v"
+    },
+    {
+      "source": "百度",
+      "rank": 8,
+      "title": "周琦肘击对手被驱逐",
+      "desc": "",
+      "heat": null,
+      "url": "https://m.baidu.com/s?word=%E5%91%A8%E7%90%A6%E8%82%98%E5%87%BB%E5%AF%B9%E6%89%8B%E8%A2%AB%E9%A9%B1%E9%80%90&sa=fyb_news"
+    },
+    {
+      "source": "HN",
+      "rank": 8,
+      "title": "Tell HN: Lots of Ask HNs again",
+      "heat": "343 分",
+      "url": "https://news.ycombinator.com/item?id=50649864"
+    },
+    {
+      "source": "微博",
+      "rank": 9,
+      "title": "武大教师曾某某被举报事件调查结果",
+      "heat": 395640,
+      "url": "https://s.weibo.com/weibo?q=%E6%AD%A6%E5%A4%A7%E6%95%99%E5%B8%88%E6%9B%BE%E6%9F%90%E6%9F%90%E8%A2%AB%E4%B8%BE%E6%8A%A5%E4%BA%8B%E4%BB%B6%E8%B0%83%E6%9F%A5%E7%BB%93%E6%9E%9C"
+    },
+    {
+      "source": "知乎",
+      "rank": 9,
+      "title": "男篮世预赛，中国男篮80-82 不敌沙特阿拉伯男篮，出线形式堪忧，如何评价本场比赛？",
+      "desc": "",
+      "heat": null,
+      "url": "https://www.zhihu.com/question/2109332292363444700"
+    },
+    {
+      "source": "B站",
+      "rank": 9,
+      "title": "吴 众",
+      "desc": "-",
+      "heat": "172.3万播放",
+      "url": "https://www.bilibili.com/video/BV1xvykzsEPv"
+    },
+    {
+      "source": "百度",
+      "rank": 9,
+      "title": "周杰伦转发中国台北帖文绿媒破防",
+      "desc": "",
+      "heat": null,
+      "url": "https://m.baidu.com/s?word=%E5%91%A8%E6%9D%B0%E4%BC%A6%E8%BD%AC%E5%8F%91%E4%B8%AD%E5%9B%BD%E5%8F%B0%E5%8C%97%E5%B8%96%E6%96%87%E7%BB%BF%E5%AA%92%E7%A0%B4%E9%98%B2&sa=fyb_news"
+    },
+    {
+      "source": "HN",
+      "rank": 9,
+      "title": "Collection of preserved UI style guides",
+      "heat": "318 分",
+      "url": "https://aresluna.org/ui-style-guides/"
+    },
+    {
+      "source": "微博",
+      "rank": 10,
+      "title": "法考成绩",
+      "heat": 393032,
+      "url": "https://s.weibo.com/weibo?q=%E6%B3%95%E8%80%83%E6%88%90%E7%BB%A9"
+    },
+    {
+      "source": "知乎",
+      "rank": 10,
+      "title": "「画地为牢」正片播出，厉娜称许飞影响了自己的发展，和许飞沟通非常困难，她们之间的沟通到底有什么问题？",
+      "desc": "[视频]",
+      "heat": null,
+      "url": "https://www.zhihu.com/question/2109280067545031700"
+    },
+    {
+      "source": "B站",
+      "rank": 10,
+      "title": "【镇魂街 第五季】你们带来的这片江山，我就先收下了【PV】",
+      "desc": "镇魂街世界纷争四起，新的危机在王国组织的野心下即将爆发，曹焱兵成王之路就此开启！",
+      "heat": "22.1万播放",
+      "url": "https://www.bilibili.com/video/BV1Vhsm69EuN"
+    },
+    {
+      "source": "百度",
+      "rank": 10,
+      "title": "彩票店中出774.1万大奖至今无人领奖",
+      "desc": "",
+      "heat": null,
+      "url": "https://m.baidu.com/s?word=%E5%BD%A9%E7%A5%A8%E5%BA%97%E4%B8%AD%E5%87%BA774.1%E4%B8%87%E5%A4%A7%E5%A5%96%E8%87%B3%E4%BB%8A%E6%97%A0%E4%BA%BA%E9%A2%86%E5%A5%96&sa=fyb_news"
+    },
+    {
+      "source": "HN",
+      "rank": 10,
+      "title": "Intel One Mono font",
+      "heat": "277 分",
+      "url": "https://github.com/intel/intel-one-mono"
+    },
+    {
+      "source": "微博",
+      "rank": 11,
+      "title": "张亚飞曝厉娜录后会友期前很忐忑",
+      "heat": 390969,
+      "url": "https://s.weibo.com/weibo?q=%E5%BC%A0%E4%BA%9A%E9%A3%9E%E6%9B%9D%E5%8E%89%E5%A8%9C%E5%BD%95%E5%90%8E%E4%BC%9A%E5%8F%8B%E6%9C%9F%E5%89%8D%E5%BE%88%E5%BF%90%E5%BF%91"
+    },
+    {
+      "source": "知乎",
+      "rank": 11,
+      "title": "曝梁文锋身家攀升至 550 亿美元，成全球最富 AI 模型创始人，是真的吗？意味着什么？",
+      "desc": "11月25日消息，据彭博社报道，中国人工智能公司DeepSeek完成新一轮融资后，创始人梁文锋的财富估计已攀升至550亿美元。 报道援引知情人士的话称，这家总部位于杭州的开发商筹集了约 1000 亿元人民币（150 亿美",
+      "heat": null,
+      "url": "https://www.zhihu.com/question/2109197560539604500"
+    },
+    {
+      "source": "B站",
+      "rank": 11,
+      "title": "【三国杀周年庆前瞻】神奇黄豆年来袭！冥赵云首发！版本内容抢先看！",
+      "desc": "神奇黄豆，豆有惊喜，11月26日周年庆预约开启，一起迎接神奇黄豆年！ ✨ 神奇黄豆年，全年开【神奇黄豆】即有机会爆「限定武将」！ ✨十种主题玩法，助力获取【神奇黄豆】 ✨全年战令升级，集齐对应数量三国",
+      "heat": "47.4万播放",
+      "url": "https://www.bilibili.com/video/BV1PsymzqEbQ"
+    },
+    {
+      "source": "百度",
+      "rank": 11,
+      "title": "湖北一网民微信群内造谣被处罚",
+      "desc": "",
+      "heat": null,
+      "url": "https://m.baidu.com/s?word=%E6%B9%96%E5%8C%97%E4%B8%80%E7%BD%91%E6%B0%91%E5%BE%AE%E4%BF%A1%E7%BE%A4%E5%86%85%E9%80%A0%E8%B0%A3%E8%A2%AB%E5%A4%84%E7%BD%9A&sa=fyb_news"
+    },
+    {
+      "source": "HN",
+      "rank": 11,
+      "title": "Euro-Office comes to your desktop with the Nextcloud Office Desktop app",
+      "heat": "235 分",
+      "url": "https://nextcloud.com/blog/euro-office-comes-to-your-desktop-with-the-nextcloud-office-desktop-app/"
+    },
+    {
+      "source": "微博",
+      "rank": 12,
+      "title": "三只松鼠员工必须用鼠取名",
+      "heat": 389988,
+      "url": "https://s.weibo.com/weibo?q=%E4%B8%89%E5%8F%AA%E6%9D%BE%E9%BC%A0%E5%91%98%E5%B7%A5%E5%BF%85%E9%A1%BB%E7%94%A8%E9%BC%A0%E5%8F%96%E5%90%8D"
+    },
+    {
+      "source": "知乎",
+      "rank": 12,
+      "title": "如何看待北大、清华在密云、通州新建校区而不落户雄安？",
+      "desc": "北京大学医学部密云校区（怀密医学中心）已于2026年10月26日正式启用‌，首批师生已入驻，标志着北大医学从学院路单一校区进入“双城驱动”的新格局。‌‌ 启用现状 ‌已投用设施‌：3栋宿舍楼、1栋科研教学楼、食堂及能源中",
+      "heat": null,
+      "url": "https://www.zhihu.com/question/2103097723176198400"
+    },
+    {
+      "source": "B站",
+      "rank": 12,
+      "title": "特朗普与民主党抽象乱斗",
+      "desc": "本视频提及事件以及信息来源如下： 《美中期选举后共和党洗牌 国会政治面临新变局》来自：央视新闻，2026-11-11 11:04发布 《从APEC会议回去后，特朗普忍不住发了30多张照片，拍得最好的是",
+      "heat": "107.4万播放",
+      "url": "https://www.bilibili.com/video/BV1xzy2zMExY"
+    },
+    {
+      "source": "百度",
+      "rank": 12,
+      "title": "男子买饮料抽奖中了一辆机车",
+      "desc": "",
+      "heat": null,
+      "url": "https://m.baidu.com/s?word=%E7%94%B7%E5%AD%90%E4%B9%B0%E9%A5%AE%E6%96%99%E6%8A%BD%E5%A5%96%E4%B8%AD%E4%BA%86%E4%B8%80%E8%BE%86%E6%9C%BA%E8%BD%A6&sa=fyb_news"
+    },
+    {
+      "source": "HN",
+      "rank": 12,
+      "title": "Minipg: PostgreSQL as a Single Executable",
+      "heat": "215 分",
+      "url": "https://progrium.github.io/minipg/"
+    },
+    {
+      "source": "微博",
+      "rank": 13,
+      "title": "中纪委一天连打三虎",
+      "heat": 387457,
+      "url": "https://s.weibo.com/weibo?q=%E4%B8%AD%E7%BA%AA%E5%A7%94%E4%B8%80%E5%A4%A9%E8%BF%9E%E6%89%93%E4%B8%89%E8%99%8E"
+    },
+    {
+      "source": "知乎",
+      "rank": 13,
+      "title": "如何看待网警通报有人针对华为、鸿蒙、问界发布数百条不实评论，捏造“千亿营销”虚假信息被行政处罚？",
+      "desc": "如题。 来源：网警公开典型案例：一网民针对华为手机 / 鸿蒙 / 问界持续发布数百条不实评论、捏造“千亿营销”等虚假信息，已被行政处罚",
+      "heat": null,
+      "url": "https://www.zhihu.com/question/2108999091560642000"
+    },
+    {
+      "source": "B站",
+      "rank": 13,
+      "title": "斥巨资40000元学穿搭！一年后，我变成了这样……",
+      "desc": "也不知道学会了没哈哈哈哈哈哈，邀请大家一起品鉴！也算我的2026年八期穿搭总结了！！！纯分享！！！希望你们喜欢！（点赞8w，你们说，继续被改造，还是我去改造别人呢！）",
+      "heat": "34.1万播放",
+      "url": "https://www.bilibili.com/video/BV1LFymz9E5s"
+    },
+    {
+      "source": "百度",
+      "rank": 13,
+      "title": "安徽大学副校长付某被免职",
+      "desc": "",
+      "heat": null,
+      "url": "https://m.baidu.com/s?word=%E5%AE%89%E5%BE%BD%E5%A4%A7%E5%AD%A6%E5%89%AF%E6%A0%A1%E9%95%BF%E4%BB%98%E6%9F%90%E8%A2%AB%E5%85%8D%E8%81%8C&sa=fyb_news"
+    },
+    {
+      "source": "HN",
+      "rank": 13,
+      "title": "Bare Metal Qwen",
+      "heat": "204 分",
+      "url": "https://github.com/alesha-pro/llm.asm/tree/main/02-baremetal-os"
+    },
+    {
+      "source": "微博",
+      "rank": 14,
+      "title": "怀孕本质是你一个人的事",
+      "heat": 386386,
+      "url": "https://s.weibo.com/weibo?q=%E6%80%80%E5%AD%95%E6%9C%AC%E8%B4%A8%E6%98%AF%E4%BD%A0%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E4%BA%8B"
+    },
+    {
+      "source": "知乎",
+      "rank": 14,
+      "title": "《英雄联盟电竞经理》宣布将于 27 年 1 月份停服，如何评价这款游戏的运营历程？",
+      "desc": "",
+      "heat": null,
+      "url": "https://www.zhihu.com/question/2109279912733270300"
+    },
+    {
+      "source": "B站",
+      "rank": 14,
+      "title": "系统bug强制让我挂机，但这反而让我变的更强了！",
+      "desc": "系统bug强制让我挂机，但这反而让我变的更强了！",
+      "heat": "91.7万播放",
+      "url": "https://www.bilibili.com/video/BV1A2yZzAEyq"
+    },
+    {
+      "source": "百度",
+      "rank": 14,
+      "title": "俄空天军副总司令被捕",
+      "desc": "",
+      "heat": null,
+      "url": "https://m.baidu.com/s?word=%E4%BF%84%E7%A9%BA%E5%A4%A9%E5%86%9B%E5%89%AF%E6%80%BB%E5%8F%B8%E4%BB%A4%E8%A2%AB%E6%8D%95&sa=fyb_news"
+    },
+    {
+      "source": "HN",
+      "rank": 14,
+      "title": "What VP ≠ VNP Means (In 3 Minutes)",
+      "heat": "190 分",
+      "url": "https://www.friedgil.com/vpvnp"
+    },
+    {
+      "source": "微博",
+      "rank": 15,
+      "title": "郭士强 换人",
+      "heat": 384806,
+      "url": "https://s.weibo.com/weibo?q=%E9%83%AD%E5%A3%AB%E5%BC%BA%20%E6%8D%A2%E4%BA%BA"
+    },
+    {
+      "source": "知乎",
+      "rank": 15,
+      "title": "市民花 750 元为空调移机，5 年后拆机才发现铜管被换成铝管，铜管和铝管有啥不同？还能维权吗？",
+      "desc": "空调制冷制热都不行，杭州市民以旧换新拆机发现猫腻：5年前花了750元移机，师傅竟把铜管顺走换成了铝管！ 11月17日晚，市民李先生向橙柿直通车反映，他家有台奥克斯空调制冷制热效果都不好，这次赶在双十一参加以旧换新活动买了",
+      "heat": null,
+      "url": "https://www.zhihu.com/question/2108865051851317800"
+    },
+    {
+      "source": "B站",
+      "rank": 15,
+      "title": "炸弹人时光倒流，坦克造炮塔，我用这台手机实现童年游戏梦",
+      "desc": "",
+      "heat": "49.6万播放",
+      "url": "https://www.bilibili.com/video/BV1U2ynzqEWz"
+    },
+    {
+      "source": "百度",
+      "rank": 15,
+      "title": "华为长鑫硬刚三星SK海力士",
+      "desc": "",
+      "heat": null,
+      "url": "https://m.baidu.com/s?word=%E5%8D%8E%E4%B8%BA%E9%95%BF%E9%91%AB%E7%A1%AC%E5%88%9A%E4%B8%89%E6%98%9FSK%E6%B5%B7%E5%8A%9B%E5%A3%AB&sa=fyb_news"
+    },
+    {
+      "source": "HN",
+      "rank": 15,
+      "title": "Nfs2root: A 12-year-old pre-auth remote root in the Linux kernel's NFS server",
+      "heat": "186 分",
+      "url": "https://opensec.in/blog/nfs2root-cve-2026-99362"
+    },
+    {
+      "source": "微博",
+      "rank": 16,
+      "title": "越南直播卖货太抽象了",
+      "heat": 382568,
+      "url": "https://s.weibo.com/weibo?q=%E8%B6%8A%E5%8D%97%E7%9B%B4%E6%92%AD%E5%8D%96%E8%B4%A7%E5%A4%AA%E6%8A%BD%E8%B1%A1%E4%BA%86"
+    },
+    {
+      "source": "知乎",
+      "rank": 16,
+      "title": "欧盟落地混动进口临时配额，中国对应配额为 19.18 万辆，国内混动出口车企该如何应对这一限制？",
+      "desc": "快科技11月24日消息，据报道，当地时间11月24日，欧盟委员会在《欧盟官方公报》发布实施条例（EU）2026/2614，决定对部分新型混合动力乘用车进口采取临时保障措施。新规将于2026年12月1日起实施，最长持续20",
+      "heat": null,
+      "url": "https://www.zhihu.com/question/2108663441766598100"
+    },
+    {
+      "source": "B站",
+      "rank": 16,
+      "title": "手刃身边人",
+      "desc": "-",
+      "heat": "127.9万播放",
+      "url": "https://www.bilibili.com/video/BV1igykzrEJG"
+    },
+    {
+      "source": "百度",
+      "rank": 16,
+      "title": "武大通报：教师曾某某被免职",
+      "desc": "",
+      "heat": null,
+      "url": "https://m.baidu.com/s?word=%E6%AD%A6%E5%A4%A7%E9%80%9A%E6%8A%A5%EF%BC%9A%E6%95%99%E5%B8%88%E6%9B%BE%E6%9F%90%E6%9F%90%E8%A2%AB%E5%85%8D%E8%81%8C&sa=fyb_news"
+    },
+    {
+      "source": "HN",
+      "rank": 16,
+      "title": "Lions' Commentary on Unix: Why It Was Secretly Copied for 20 Years",
+      "heat": "182 分",
+      "url": "https://fosscomics.com/posts/17.%20Lions%27%20Commentary%20on%20Unix/"
+    },
+    {
+      "source": "微博",
+      "rank": 17,
+      "title": "Angelababy雷霆高光",
+      "heat": 380752,
+      "url": "https://s.weibo.com/weibo?q=Angelababy%E9%9B%B7%E9%9C%86%E9%AB%98%E5%85%89"
+    },
+    {
+      "source": "知乎",
+      "rank": 17,
+      "title": "坚持吃钙片的话，骨密度会不会有一些增加呢？",
+      "desc": "前段时间骨折了，所以最近在坚持吃钙片，不晓得会不会有一些效果呢。",
+      "heat": null,
+      "url": "https://www.zhihu.com/question/2071996172307280100"
+    },
+    {
+      "source": "B站",
+      "rank": 17,
+      "title": "我把Steam复刻搬进了B站游玩Toy【点击即玩】ToyToy【B站AI创造公开赛】",
+      "desc": "点开就能用 https://www.bilibili.com/toy/toytoy/index.html 欢迎留言、转发！ 这是为观众方便查找、收藏、随机游玩游戏准备的一个Toy。你可以无限随机找到你",
+      "heat": "19.0万播放",
+      "url": "https://www.bilibili.com/video/BV119yCzcEBd"
+    },
+    {
+      "source": "百度",
+      "rank": 17,
+      "title": "官方通报“86页PDF举报女教授”",
+      "desc": "",
+      "heat": null,
+      "url": "https://m.baidu.com/s?word=%E5%AE%98%E6%96%B9%E9%80%9A%E6%8A%A5%E2%80%9C86%E9%A1%B5PDF%E4%B8%BE%E6%8A%A5%E5%A5%B3%E6%95%99%E6%8E%88%E2%80%9D&sa=fyb_news"
+    },
+    {
+      "source": "HN",
+      "rank": 17,
+      "title": "Tell HN: Happy Thanksgiving",
+      "heat": "154 分",
+      "url": "https://news.ycombinator.com/item?id=50655664"
+    },
+    {
+      "source": "微博",
+      "rank": 18,
+      "title": "武汉大学",
+      "heat": 379158,
+      "url": "https://s.weibo.com/weibo?q=%E6%AD%A6%E6%B1%89%E5%A4%A7%E5%AD%A6"
+    },
+    {
+      "source": "知乎",
+      "rank": 18,
+      "title": "如果一个月给你8000，但办公室永远只有你一个人，连说话的人都没有，你能坚持多久？",
+      "desc": "",
+      "heat": null,
+      "url": "https://www.zhihu.com/question/2107406132625069600"
+    },
+    {
+      "source": "B站",
+      "rank": 18,
+      "title": "153分钟超长大合集！【末日来临，我从吃丧尸开始成神！】第1季+第2季完整版【AI全民制作人】",
+      "desc": "这是【末日来临，我从吃丧尸开始成神！】的第一季+第二季的完整版大合集，感谢大家的支持！",
+      "heat": "180.6万播放",
+      "url": "https://www.bilibili.com/video/BV16nyXzyEuQ"
+    },
+    {
+      "source": "百度",
+      "rank": 18,
+      "title": "罕见回暖！这些地方有望穿回短袖",
+      "desc": "",
+      "heat": null,
+      "url": "https://m.baidu.com/s?word=%E7%BD%95%E8%A7%81%E5%9B%9E%E6%9A%96%EF%BC%81%E8%BF%99%E4%BA%9B%E5%9C%B0%E6%96%B9%E6%9C%89%E6%9C%9B%E7%A9%BF%E5%9B%9E%E7%9F%AD%E8%A2%96&sa=fyb_news"
+    },
+    {
+      "source": "HN",
+      "rank": 18,
+      "title": "Moat: Your OpenRouter Replacement",
+      "heat": "145 分",
+      "url": "https://commandcode.ai/moat"
+    },
+    {
+      "source": "微博",
+      "rank": 19,
+      "title": "网友喊话芒果退钱",
+      "heat": 378885,
+      "url": "https://s.weibo.com/weibo?q=%E7%BD%91%E5%8F%8B%E5%96%8A%E8%AF%9D%E8%8A%92%E6%9E%9C%E9%80%80%E9%92%B1"
+    },
+    {
+      "source": "知乎",
+      "rank": 19,
+      "title": "黄仁勋将于12月3日出席美国参议院听证会，证人名单上只有他一人，如何解读？",
+      "desc": "https://baijiahao.baidu.com/s?id=1882697516550745372&wfr=spider&for=pc&searchword=%E9%BB%84%E4%BB%81%E5%8B%8B%",
+      "heat": null,
+      "url": "https://www.zhihu.com/question/2108493193511711500"
+    },
+    {
+      "source": "B站",
+      "rank": 19,
+      "title": "天津.赵大姑 厨子探店¥350",
+      "desc": "小店做的菜堪称教科书呀！还有隐藏菜单？！",
+      "heat": "53.2万播放",
+      "url": "https://www.bilibili.com/video/BV1C2y2zYEV8"
+    },
+    {
+      "source": "百度",
+      "rank": 19,
+      "title": "两子非亲生女方回应被指出轨丈夫堂哥",
+      "desc": "",
+      "heat": null,
+      "url": "https://m.baidu.com/s?word=%E4%B8%A4%E5%AD%90%E9%9D%9E%E4%BA%B2%E7%94%9F%E5%A5%B3%E6%96%B9%E5%9B%9E%E5%BA%94%E8%A2%AB%E6%8C%87%E5%87%BA%E8%BD%A8%E4%B8%88%E5%A4%AB%E5%A0%82%E5%93%A5&sa=fyb_news"
+    },
+    {
+      "source": "HN",
+      "rank": 19,
+      "title": "Deploying a payphone on a tiny Pacific Island for fun and zero profit",
+      "heat": "136 分",
+      "url": "https://nickvsnetworking.com/deploying-a-payphone-on-a-tiny-pacific-island-for-fun-and-zero-profit/"
+    },
+    {
+      "source": "微博",
+      "rank": 20,
+      "title": "14岁女孩遭同学父亲猥亵",
+      "heat": 377894,
+      "url": "https://s.weibo.com/weibo?q=14%E5%B2%81%E5%A5%B3%E5%AD%A9%E9%81%AD%E5%90%8C%E5%AD%A6%E7%88%B6%E4%BA%B2%E7%8C%A5%E4%BA%B5"
+    },
+    {
+      "source": "知乎",
+      "rank": 20,
+      "title": "高中生武术比赛滑倒尝试鲤鱼打挺失败仍获亚军，官方称仅 3 人参赛无违规，该结果是否合理？",
+      "desc": "据新京报我们视频报道，近日，在内蒙古包头市举办的2026年内蒙古自治区中学生武术锦标赛上，一段乌兰察布市某高中学生张某某的南棍参赛视频在网络广泛传播，随之引发争议。 比赛开场时，张某某因动作不协调意外滑倒，随后尝试“鲤鱼",
+      "heat": null,
+      "url": "https://www.zhihu.com/question/2108924693923341600"
+    },
+    {
+      "source": "B站",
+      "rank": 20,
+      "title": "考研政治一页纸（3小时速成选择40+）",
+      "desc": "看完此视频选择保底40分，视频所用文件《帕拉迪宇》自取",
+      "heat": "25.2万播放",
+      "url": "https://www.bilibili.com/video/BV1wXyUzME25"
+    },
+    {
+      "source": "百度",
+      "rank": 20,
+      "title": "中国U17男足vs斐济U17",
+      "desc": "",
+      "heat": null,
+      "url": "https://m.baidu.com/s?word=%E4%B8%AD%E5%9B%BDU17%E7%94%B7%E8%B6%B3vs%E6%96%90%E6%B5%8EU17&sa=fyb_news"
+    },
+    {
+      "source": "HN",
+      "rank": 20,
+      "title": "The Great Automatic Grammatizator (By Roald Dahl), 1954 [pdf]",
+      "heat": "129 分",
+      "url": "https://gwern.net/doc/fiction/science-fiction/1953-dahl-thegreatautomaticgrammatizator.pdf"
+    },
+    {
+      "source": "微博",
+      "rank": 21,
+      "title": "广州车展",
+      "heat": 376424,
+      "url": "https://s.weibo.com/weibo?q=%E5%B9%BF%E5%B7%9E%E8%BD%A6%E5%B1%95"
+    },
+    {
+      "source": "知乎",
+      "rank": 21,
+      "title": "如何看待普京在深圳下榻期间喜欢上酒店粤菜，离店前还特意打包带上飞机？",
+      "desc": "APEC会议周期间，俄罗斯总统普京下榻深圳康莱德酒店。11月25日，深视新闻记者来到康莱德酒店探访。据酒店总经理卡特介绍，普京在离店前留下了亲笔签名，并说“谢谢”。 酒店总经理卡特向记者回忆了俄罗斯总统普京一行离店时的场",
+      "heat": null,
+      "url": "https://www.zhihu.com/question/2109257162182452000"
+    },
+    {
+      "source": "B站",
+      "rank": 21,
+      "title": "我 只 在 乎 你",
+      "desc": "大家好～今天唱《我只在乎你》！ 最近忙不忙，累不累呀？吃饭了吗，吃的啥好吃滴～ 各位大小朋友都辛苦咯！ （依旧）祝大家和家人健康快乐，平安幸福！",
+      "heat": "171.2万播放",
+      "url": "https://www.bilibili.com/video/BV12yyzzDEYg"
+    },
+    {
+      "source": "百度",
+      "rank": 21,
+      "title": "董明珠回应不招留学生争议",
+      "desc": "",
+      "heat": null,
+      "url": "https://m.baidu.com/s?word=%E8%91%A3%E6%98%8E%E7%8F%A0%E5%9B%9E%E5%BA%94%E4%B8%8D%E6%8B%9B%E7%95%99%E5%AD%A6%E7%94%9F%E4%BA%89%E8%AE%AE&sa=fyb_news"
+    },
+    {
+      "source": "HN",
+      "rank": 21,
+      "title": "An algebraic quantization of gravity from the null cone",
+      "heat": "117 分",
+      "url": "https://arxiv.org/abs/2611.34924"
+    },
+    {
+      "source": "微博",
+      "rank": 22,
+      "title": "昆仑山失联3人曾要过GPS卫星轨迹",
+      "heat": 373728,
+      "url": "https://s.weibo.com/weibo?q=%E6%98%86%E4%BB%91%E5%B1%B1%E5%A4%B1%E8%81%943%E4%BA%BA%E6%9B%BE%E8%A6%81%E8%BF%87GPS%E5%8D%AB%E6%98%9F%E8%BD%A8%E8%BF%B9"
+    },
+    {
+      "source": "知乎",
+      "rank": 22,
+      "title": "马斯克将送全美儿童每人 2 股 SpaceX 股票，这对 SpaceX 股权结构有何影响？",
+      "desc": "11 月 26 日，据报道，马斯克在社交平台上发文称，每名美国儿童将获得两股 SpaceX 股票，一股由公司赠予，一股由马斯克个人赠予。 SpaceX 提供的股份将于下月完成划转。马斯克个人名下的这部分股份，将在明年 6",
+      "heat": null,
+      "url": "https://www.zhihu.com/question/2109301090437153500"
+    },
+    {
+      "source": "B站",
+      "rank": 22,
+      "title": "自信一点！你不是在追热点，是在创造热点！",
+      "desc": "-",
+      "heat": "149.5万播放",
+      "url": "https://www.bilibili.com/video/BV1JzyBzKEnY"
+    },
+    {
+      "source": "百度",
+      "rank": 22,
+      "title": "头部城市 开始比“旧”",
+      "desc": "",
+      "heat": null,
+      "url": "https://m.baidu.com/s?word=%E5%A4%B4%E9%83%A8%E5%9F%8E%E5%B8%82+%E5%BC%80%E5%A7%8B%E6%AF%94%E2%80%9C%E6%97%A7%E2%80%9D&sa=fyb_news"
+    },
+    {
+      "source": "HN",
+      "rank": 22,
+      "title": "Show HN: Synth Patch Hero",
+      "heat": "105 分",
+      "url": "https://swarkentin.github.io/synth-patch-hero/"
+    },
+    {
+      "source": "微博",
+      "rank": 23,
+      "title": "哪个大学没名气但某领域顶尖",
+      "heat": 371299,
+      "url": "https://s.weibo.com/weibo?q=%E5%93%AA%E4%B8%AA%E5%A4%A7%E5%AD%A6%E6%B2%A1%E5%90%8D%E6%B0%94%E4%BD%86%E6%9F%90%E9%A2%86%E5%9F%9F%E9%A1%B6%E5%B0%96"
+    },
+    {
+      "source": "知乎",
+      "rank": 23,
+      "title": "如何评价极客湾发布的手机影像大横评视频？",
+      "desc": "[图片]",
+      "heat": null,
+      "url": "https://www.zhihu.com/question/2108960337538164500"
+    },
+    {
+      "source": "B站",
+      "rank": 23,
+      "title": "还会变脸！",
+      "desc": "舞蹈扒自迦陵频伽，编导：胡元园、马璐瑶",
+      "heat": "70.7万播放",
+      "url": "https://www.bilibili.com/video/BV12myzzUEEA"
+    },
+    {
+      "source": "百度",
+      "rank": 23,
+      "title": "中纪委连打三“虎”",
+      "desc": "",
+      "heat": null,
+      "url": "https://m.baidu.com/s?word=%E4%B8%AD%E7%BA%AA%E5%A7%94%E8%BF%9E%E6%89%93%E4%B8%89%E2%80%9C%E8%99%8E%E2%80%9D&sa=fyb_news"
+    },
+    {
+      "source": "HN",
+      "rank": 23,
+      "title": "Unconditional Integer Factorization in Subexponential Time",
+      "heat": "100 分",
+      "url": "https://github.com/google-research/google-research/tree/4a7bc8ab0bc770e71a259b7966c500496b99010a/cogentic_research_papers/integer_factorization"
+    },
+    {
+      "source": "微博",
+      "rank": 24,
+      "title": "厉娜预判了网友的预判",
+      "heat": 370077,
+      "url": "https://s.weibo.com/weibo?q=%E5%8E%89%E5%A8%9C%E9%A2%84%E5%88%A4%E4%BA%86%E7%BD%91%E5%8F%8B%E7%9A%84%E9%A2%84%E5%88%A4"
+    },
+    {
+      "source": "知乎",
+      "rank": 24,
+      "title": "德国汽车业劳资冲突升级遭罢工冲击，车企降本为何难平衡劳工诉求？",
+      "desc": "IT之家 11 月 3 日消息，据彭博社报道，德国金属行业工会正在全国范围加大停工力度，劳方争取加薪、强化岗位保障，这场劳资纠纷波及约 370 万名员工，矛盾持续升级。 10 月底强制休战期到期后，奥迪（大众集团旗下）、",
+      "heat": null,
+      "url": "https://www.zhihu.com/question/2101035642910151400"
+    },
+    {
+      "source": "B站",
+      "rank": 24,
+      "title": "我们成为英雄，哪怕只有一天",
+      "desc": "We can be heroes, just for one day BGM： 《Pay No Mind (Lemaitre Remix)》---Madeon/Passion Pit 《雨爱》（司凤版",
+      "heat": "295.6万播放",
+      "url": "https://www.bilibili.com/video/BV1ioyGzZET8"
+    },
+    {
+      "source": "百度",
+      "rank": 24,
+      "title": "印度豪华婚宴变“抢饭现场”",
+      "desc": "",
+      "heat": null,
+      "url": "https://m.baidu.com/s?word=%E5%8D%B0%E5%BA%A6%E8%B1%AA%E5%8D%8E%E5%A9%9A%E5%AE%B4%E5%8F%98%E2%80%9C%E6%8A%A2%E9%A5%AD%E7%8E%B0%E5%9C%BA%E2%80%9D&sa=fyb_news"
+    },
+    {
+      "source": "HN",
+      "rank": 24,
+      "title": "The history of civilization is the history of wheat",
+      "heat": "89 分",
+      "url": "https://asteriskmag.com/issues/16/marginal-grains"
+    },
+    {
+      "source": "微博",
+      "rank": 25,
+      "title": "徐璐身材",
+      "heat": 367040,
+      "url": "https://s.weibo.com/weibo?q=%E5%BE%90%E7%92%90%E8%BA%AB%E6%9D%90"
+    },
+    {
+      "source": "知乎",
+      "rank": 25,
+      "title": "《蓝色星原：旅谣》11月26日公测后大家都游玩体验如何？对这游戏的前景有何看法？",
+      "desc": "",
+      "heat": null,
+      "url": "https://www.zhihu.com/question/2109019420349814500"
+    },
+    {
+      "source": "B站",
+      "rank": 25,
+      "title": "《狩》首曝PV&实机演示丨动作要秀，有狩就行！",
+      "desc": "各位选手，欢迎来到“狩”，一个全新的动作赛场！ 聚光灯下，个性十足的时尚厂牌选手齐聚于此——在这里，怎么秀由你说了算！数十种武器搭配华丽多变的动作招式，近战博弈、全域跑酷与竞技策略层层交叠，每一帧都将",
+      "heat": "656.3万播放",
+      "url": "https://www.bilibili.com/video/BV1931AzhE1q"
+    },
+    {
+      "source": "百度",
+      "rank": 25,
+      "title": "王虹再获国际大奖",
+      "desc": "",
+      "heat": null,
+      "url": "https://m.baidu.com/s?word=%E7%8E%8B%E8%99%B9%E5%86%8D%E8%8E%B7%E5%9B%BD%E9%99%85%E5%A4%A7%E5%A5%96&sa=fyb_news"
+    },
+    {
+      "source": "HN",
+      "rank": 25,
+      "title": "45°C inlets just killed the chiller. Most people haven't noticed yet",
+      "heat": "71 分",
+      "url": "https://www.theregister.com/hpc/2026/11/26/45c-inlets-just-killed-the-chiller-most-people-havent-noticed-yet/5311831"
+    },
+    {
+      "source": "微博",
+      "rank": 26,
+      "title": "后会友期看得我精神哮喘了",
+      "heat": 365866,
+      "url": "https://s.weibo.com/weibo?q=%E5%90%8E%E4%BC%9A%E5%8F%8B%E6%9C%9F%E7%9C%8B%E5%BE%97%E6%88%91%E7%B2%BE%E7%A5%9E%E5%93%AE%E5%96%98%E4%BA%86"
+    },
+    {
+      "source": "知乎",
+      "rank": 26,
+      "title": "汉中3 孩均非亲生离婚案一审判女方赔 22 万自行承担 27 万欠款，该判罚的法律依据是什么？",
+      "desc": "#3孩均非亲生案女方27万欠款自己还#【“3孩均非亲生”离婚纠纷案一审宣判：女方违背忠实义务伤害夫妻感情，判赔22万元，准予离婚，孩子均由女方抚养】#3孩均非亲生案判决孩子由女方抚养##3孩均非亲生案女方被判赔男方22万",
+      "heat": null,
+      "url": "https://www.zhihu.com/question/2109011566599455000"
+    },
+    {
+      "source": "B站",
+      "rank": 26,
+      "title": "大肥鱼你真的是串麻了",
+      "desc": "视频内容仅供娱乐，本质为二创作品，不涉及且不针对任何产品及其个人，无任何商业用途。 人物形象参考：@ZipZipPipe @这个刀子真甜 @上善无形 @尹紫鹭幻想社 @蒙德砍壬 apple-siri形",
+      "heat": "23.8万播放",
+      "url": "https://www.bilibili.com/video/BV17dy2z4E5f"
+    },
+    {
+      "source": "百度",
+      "rank": 26,
+      "title": "男子花2.7万学炒股一年亏了25万",
+      "desc": "",
+      "heat": null,
+      "url": "https://m.baidu.com/s?word=%E7%94%B7%E5%AD%90%E8%8A%B12.7%E4%B8%87%E5%AD%A6%E7%82%92%E8%82%A1%E4%B8%80%E5%B9%B4%E4%BA%8F%E4%BA%8625%E4%B8%87&sa=fyb_news"
+    },
+    {
+      "source": "微博",
+      "rank": 27,
+      "title": "吴哲晗 结婚",
+      "heat": 363572,
+      "url": "https://s.weibo.com/weibo?q=%E5%90%B4%E5%93%B2%E6%99%97%20%E7%BB%93%E5%A9%9A"
+    },
+    {
+      "source": "知乎",
+      "rank": 27,
+      "title": "2026 年 U17 世界杯，国足遭摩洛哥读秒绝平两轮积 1 分，末轮对阵斐济如何才能出线？",
+      "desc": "北京时间11月24日，2026年国际足联U17世界杯小组赛第二轮，中国队补时阶段遭读秒绝平，以2比2战平摩洛哥队，拿到本届比赛第一分。前两轮中国队1平1负积1分，暂列小组第三，最后一轮将对阵小组垫底的斐济队，若能取胜将大",
+      "heat": null,
+      "url": "https://www.zhihu.com/question/2108671208430618600"
+    },
+    {
+      "source": "B站",
+      "rank": 27,
+      "title": "【影Sir】一口气看已播五集！午夜进店的顾客不是人，请谨记13条便利店生存守则，恐怖规则怪谈泰剧《午夜规则》",
+      "desc": "恐怖规则怪谈泰剧《午夜规则》，E1-5。 午夜进店的顾客不是人，13条夜班员工生存守则事关生死！",
+      "heat": "87.0万播放",
+      "url": "https://www.bilibili.com/video/BV1hXyBz4EXr"
+    },
+    {
+      "source": "百度",
+      "rank": 27,
+      "title": "王忠林被罢免全国人大代表职务",
+      "desc": "",
+      "heat": null,
+      "url": "https://m.baidu.com/s?word=%E7%8E%8B%E5%BF%A0%E6%9E%97%E8%A2%AB%E7%BD%A2%E5%85%8D%E5%85%A8%E5%9B%BD%E4%BA%BA%E5%A4%A7%E4%BB%A3%E8%A1%A8%E8%81%8C%E5%8A%A1&sa=fyb_news"
+    },
+    {
+      "source": "微博",
+      "rank": 28,
+      "title": "易峥给无畏道歉了",
+      "heat": 361538,
+      "url": "https://s.weibo.com/weibo?q=%E6%98%93%E5%B3%A5%E7%BB%99%E6%97%A0%E7%95%8F%E9%81%93%E6%AD%89%E4%BA%86"
+    },
+    {
+      "source": "知乎",
+      "rank": 28,
+      "title": "2627赛季NBA杯小组赛西部C组国王 110:129 勇士，如何评价这场比赛？",
+      "desc": "",
+      "heat": null,
+      "url": "https://www.zhihu.com/question/2109243900422514400"
+    },
+    {
+      "source": "B站",
+      "rank": 28,
+      "title": "真跳60分钟😡绝望算不算时间啊？ 超高校级的绝望舞步！【bilibilionly同人扶持计划】",
+      "desc": "本投稿参与了bilibilionly同人扶持计划@我bilibilionly投了 上一棒@行星神Xs 下一棒@达令教主111 歌曲：BLACKPINK—JUMP BABYMONSTER—PSYCHO",
+      "heat": "44.1万播放",
+      "url": "https://www.bilibili.com/video/BV1WvykzsEmt"
+    },
+    {
+      "source": "百度",
+      "rank": 28,
+      "title": "企业学习胖东来员工涨薪45%",
+      "desc": "",
+      "heat": null,
+      "url": "https://m.baidu.com/s?word=%E4%BC%81%E4%B8%9A%E5%AD%A6%E4%B9%A0%E8%83%96%E4%B8%9C%E6%9D%A5%E5%91%98%E5%B7%A5%E6%B6%A8%E8%96%AA45%25&sa=fyb_news"
+    },
+    {
+      "source": "微博",
+      "rank": 29,
+      "title": "张萌 许飞需要我错怪你了这句话",
+      "heat": 359765,
+      "url": "https://s.weibo.com/weibo?q=%E5%BC%A0%E8%90%8C%20%E8%AE%B8%E9%A3%9E%E9%9C%80%E8%A6%81%E6%88%91%E9%94%99%E6%80%AA%E4%BD%A0%E4%BA%86%E8%BF%99%E5%8F%A5%E8%AF%9D"
+    },
+    {
+      "source": "知乎",
+      "rank": 29,
+      "title": "如何看待《多喜一家人》里蒋欣饰演的闻佳音？",
+      "desc": "",
+      "heat": null,
+      "url": "https://www.zhihu.com/question/2106742876793201400"
+    },
+    {
+      "source": "B站",
+      "rank": 29,
+      "title": "再乳下去 我可能要被开除法籍了…",
+      "desc": "法欣社&法国驻华大使！年度巨献！超级无敌究极大活儿！！ 第一集《乳不压法》本周五上线 已经开放预约啦~~",
+      "heat": "116.0万播放",
+      "url": "https://www.bilibili.com/video/BV16ry6zkEKP"
+    },
+    {
+      "source": "百度",
+      "rank": 29,
+      "title": "上海百亿养老集资诈骗案开庭",
+      "desc": "",
+      "heat": null,
+      "url": "https://m.baidu.com/s?word=%E4%B8%8A%E6%B5%B7%E7%99%BE%E4%BA%BF%E5%85%BB%E8%80%81%E9%9B%86%E8%B5%84%E8%AF%88%E9%AA%97%E6%A1%88%E5%BC%80%E5%BA%AD&sa=fyb_news"
+    },
+    {
+      "source": "微博",
+      "rank": 30,
+      "title": "现货黄金",
+      "heat": 316878,
+      "url": "https://s.weibo.com/weibo?q=%E7%8E%B0%E8%B4%A7%E9%BB%84%E9%87%91"
+    },
+    {
+      "source": "知乎",
+      "rank": 30,
+      "title": "斗鱼及陈少杰被执行超 1.9 亿，从巅峰到接连踩雷，斗鱼这些年衰落的核心原因是什么？",
+      "desc": "11月25日消息，近日，斗鱼关联公司武汉斗鱼网络科技有限公司、创始人陈少杰新增1则被执行人信息，执行标的1.9亿余元人民币，执行法院为都江堰市人民法院。该公司成立于2015年5月，法定代表人为高杰，注册资本约2234万元",
+      "heat": null,
+      "url": "https://www.zhihu.com/question/2108965316487295200"
+    },
+    {
+      "source": "B站",
+      "rank": 30,
+      "title": "《二重螺旋》汽笛为谁而鸣版本前瞻研发面谈回放",
+      "desc": "12月1日全新版本「汽笛为谁而鸣」正式开启！",
+      "heat": "13.8万播放",
+      "url": "https://www.bilibili.com/video/BV1wD1FzMEAE"
+    },
+    {
+      "source": "百度",
+      "rank": 30,
+      "title": "港交所公开谴责许家印",
+      "desc": "",
+      "heat": null,
+      "url": "https://m.baidu.com/s?word=%E6%B8%AF%E4%BA%A4%E6%89%80%E5%85%AC%E5%BC%80%E8%B0%B4%E8%B4%A3%E8%AE%B8%E5%AE%B6%E5%8D%B0&sa=fyb_news"
+    },
+    {
+      "source": "微博",
+      "rank": 31,
+      "title": "华为长鑫将与三星海力士正面交锋",
+      "heat": 312502,
+      "url": "https://s.weibo.com/weibo?q=%E5%8D%8E%E4%B8%BA%E9%95%BF%E9%91%AB%E5%B0%86%E4%B8%8E%E4%B8%89%E6%98%9F%E6%B5%B7%E5%8A%9B%E5%A3%AB%E6%AD%A3%E9%9D%A2%E4%BA%A4%E9%94%8B"
+    },
+    {
+      "source": "微博",
+      "rank": 32,
+      "title": "刘亦菲好嫩",
+      "heat": 311491,
+      "url": "https://s.weibo.com/weibo?q=%E5%88%98%E4%BA%A6%E8%8F%B2%E5%A5%BD%E5%AB%A9"
+    },
+    {
+      "source": "微博",
+      "rank": 33,
+      "title": "三只松鼠员工住12人间",
+      "heat": 290406,
+      "url": "https://s.weibo.com/weibo?q=%E4%B8%89%E5%8F%AA%E6%9D%BE%E9%BC%A0%E5%91%98%E5%B7%A5%E4%BD%8F12%E4%BA%BA%E9%97%B4"
+    },
+    {
+      "source": "微博",
+      "rank": 34,
+      "title": "支付宝加入华为乾崑生态",
+      "heat": 287553,
+      "url": "https://s.weibo.com/weibo?q=%E6%94%AF%E4%BB%98%E5%AE%9D%E5%8A%A0%E5%85%A5%E5%8D%8E%E4%B8%BA%E4%B9%BE%E5%B4%91%E7%94%9F%E6%80%81"
+    },
+    {
+      "source": "微博",
+      "rank": 35,
+      "title": "看到摔死小猪文字真的好难受",
+      "heat": 286164,
+      "url": "https://s.weibo.com/weibo?q=%E7%9C%8B%E5%88%B0%E6%91%94%E6%AD%BB%E5%B0%8F%E7%8C%AA%E6%96%87%E5%AD%97%E7%9C%9F%E7%9A%84%E5%A5%BD%E9%9A%BE%E5%8F%97"
+    },
+    {
+      "source": "微博",
+      "rank": 36,
+      "title": "马云为平头哥芯片量产打气",
+      "heat": 266805,
+      "url": "https://s.weibo.com/weibo?q=%E9%A9%AC%E4%BA%91%E4%B8%BA%E5%B9%B3%E5%A4%B4%E5%93%A5%E8%8A%AF%E7%89%87%E9%87%8F%E4%BA%A7%E6%89%93%E6%B0%94"
+    },
+    {
+      "source": "微博",
+      "rank": 37,
+      "title": "月亮",
+      "heat": 260212,
+      "url": "https://s.weibo.com/weibo?q=%E6%9C%88%E4%BA%AE"
+    },
+    {
+      "source": "微博",
+      "rank": 38,
+      "title": "易峥点赞",
+      "heat": 251921,
+      "url": "https://s.weibo.com/weibo?q=%E6%98%93%E5%B3%A5%E7%82%B9%E8%B5%9E"
+    },
+    {
+      "source": "微博",
+      "rank": 39,
+      "title": "安大副校长付某被免职",
+      "heat": 248258,
+      "url": "https://s.weibo.com/weibo?q=%E5%AE%89%E5%A4%A7%E5%89%AF%E6%A0%A1%E9%95%BF%E4%BB%98%E6%9F%90%E8%A2%AB%E5%85%8D%E8%81%8C"
+    },
+    {
+      "source": "微博",
+      "rank": 40,
+      "title": "向华强不允许女儿来见他",
+      "heat": 244990,
+      "url": "https://s.weibo.com/weibo?q=%E5%90%91%E5%8D%8E%E5%BC%BA%E4%B8%8D%E5%85%81%E8%AE%B8%E5%A5%B3%E5%84%BF%E6%9D%A5%E8%A7%81%E4%BB%96"
+    }
+  ]
+}
