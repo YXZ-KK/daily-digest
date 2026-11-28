@@ -3,8 +3,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#101217">
-<link rel="manifest" href="manifest.webmanifest">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="每日热点">
@@ -58,7 +58,7 @@
 <header>
   <h1>每日热点 · 2026-11-27</h1>
   <div class="sub">198 条 · 2026-11-27 08:45 生成 · 微博 / 知乎 / B站 / 百度 / HN / IT之家 / 少数派 / 钛媒体</div>
-  
+  <div class="sub" style="margin-top:6px"><a href="../index.html" style="color:#7aa2ff;text-decoration:none">← 回到今天</a></div>
 </header>
 <nav><a href="#科技/AI">科技/AI</a><a href="#游戏/动漫">游戏/动漫</a><a href="#财经/商业">财经/商业</a><a href="#娱乐/明星">娱乐/明星</a><a href="#社会/民生">社会/民生</a><a href="#体育">体育</a><a href="#国际">国际</a></nav>
 <section class="card" id="top">
@@ -1680,17 +1680,17 @@
     </section>
 <div class="picker">
     <select id="dateSel" aria-label="选择日期">
-      <option value="2026-11-27" selected>2026-11-27（最新）</option><option value="2026-11-26">2026-11-26</option><option value="2026-11-24">2026-11-24</option>
+      <option value="2026-11-28">2026-11-28（最新）</option><option value="2026-11-27" selected>2026-11-27</option><option value="2026-11-26">2026-11-26</option><option value="2026-11-24">2026-11-24</option>
     </select>
   </div>
   <script>document.getElementById('dateSel').addEventListener('change',e=>{
     const v=e.target.value; if(!v) return;
-    location.href = 'd/'+v+'.html';
+    location.href = '../d/'+v+'.html';
   })</script>
 <footer>
   <div>共 198 条 · 每天 08:00 自动更新</div>
-  <div style="margin-top:6px"><a href="archive.html">历史归档</a> · <a href="https://github.com/YXZ-KK/daily-digest" target="_blank" rel="noopener">源码</a></div>
+  <div style="margin-top:6px"><a href="../archive.html">历史归档</a> · <a href="https://github.com/YXZ-KK/daily-digest" target="_blank" rel="noopener">源码</a></div>
   <div style="margin-top:6px">自动抓取公开榜单，仅作汇总，标题点击跳转原文</div>
 </footer>
-<script>if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}))}</script>
+<script>if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('../sw.js').catch(()=>{}))}</script>
 </body></html>
